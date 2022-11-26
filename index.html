@@ -14,7 +14,7 @@
 
   <!--------------------------------- Icons ----------------------------------->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fork-awesome@1.2.0/css/fork-awesome.min.css"
-  integrity="sha256-XoaMnoYC5TH6/+ihMEnospgm0J1PM/nioxbOUdnM8HY=" crossorigin="anonymous">
+    integrity="sha256-XoaMnoYC5TH6/+ihMEnospgm0J1PM/nioxbOUdnM8HY=" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
 
   <!--------------------------------- Other stuff ----------------------------->
@@ -27,16 +27,14 @@
   <div class="wrapper">
     <header>
       <h1>Vihan Lakshman</h1>
-      <img src="assets/images/circle.png" alt="Bio Image">
+      <img src="assets/images/vihan_pic.jpeg" alt="Bio Image">
 
       <div class="social-icons">
-        <a class="social-icon" href="mailto:vihan.lakshman@gmail.com"><i
-            class="fa fa-envelope-square"></i></a>
-        <a class="social-icon" href="https://github.com/vihan-lakshman/"><i
-            class="fa fa-github-square"></i></a>
+        <a class="social-icon" href="mailto:vihan.lakshman@gmail.com"><i class="fa fa-envelope-square"></i></a>
+        <a class="social-icon" href="https://github.com/vihan-lakshman/"><i class="fa fa-github-square"></i></a>
         <a class="social-icon" href="https://scholar.google.com/citations?user=yVPnVK8AAAAJ&hl=en"><i
             class="ai ai-google-scholar-square"></i></a>
-        <a class="social-icon" href="assets/files/CV.pdf"><i class="ai ai-cv-square"></i></a>
+        <a class="social-icon" href="assets/files/vihan-cv.pdf"><i class="ai ai-cv-square"></i></a>
       </div>
 
       <br>
@@ -44,28 +42,19 @@
     </header>
 
     <section>
-      <h1>Howdy!</h1>
+      <h1>Hello!</h1>
 
       I currently work as an AI engineer at ThirdAI, where we are building an
-      in-house sparse machine learning engine from scratch. At ThirdAI, I am 
+      in-house sparse machine learning engine from scratch. At ThirdAI, I am
       lucky to be able to combine my passions for building algorithms and
-      for implementing high performance systems. 
-
-      <br><br>     
-
-      While at ThirdAI, and earlier in Rice University's Sketching and Hashing 
-      Lab, I have investigated randomized algorithms, group testing, and 
-      locality sensitive hashing. This work has resulting in efficient data 
-      structures that use these techniques to speed up high dimensional 
-      near neighbor search 
-      (<a href="https://proceedings.neurips.cc/paper/2021/file/5248e5118c84beea359b6ea385393661-Paper.pdf">FLINNG</a>) 
-      and set-of-vector search 
-      (<a href="https://arxiv.org/pdf/2210.15748.pdf">DESSERT</a>). 
+      for implementing high performance systems.
 
       <br><br>
 
-      Broadly, I am interested in building algorithms that solve real-world 
-      problems in a wide variety of domains, including machine learning, 
+      <br><br>
+
+      Broadly, I am interested in building algorithms that solve real-world
+      problems in a wide variety of domains, including machine learning,
       compression, computational geometry, and distributed computing.
       <br>
       <br>
@@ -74,32 +63,20 @@
       <h2>Papers</h2>
       <p>
         <b>DESSERT: An Efficient Algorithm for Vector Set Search with Vector Set Queries.</b> <br>
-        <u>Joshua Engels</u>, Benjamin Coleman,  Vihan Lakshman, and Anshumali Shrivastava<br>
+        Joshua Engels, Benjamin Coleman, <u>Vihan Lakshman</u>, and Anshumali Shrivastava<br>
         Under submission<br>
         <a href="https://arxiv.org/pdf/2210.15748.pdf">Preprint</a> |
         <a href="https://github.com/ThirdAIResearch/Dessert">Code</a> |
-        <a href="dessert">Blog Post</a>
+        <!-- <a href="dessert">Blog Post</a> -->
       </p>
 
       <p>
-        <b>Practical Near Neighbor Search via Group Testing.</b> <br>
-        <u>Joshua Engels</u>*, Benjamin Coleman*, and Anshumali Shrivastava<br>
-        NeurIPS 2021: Spotlight talk - top 3%<br>
-        * indicates equal contribution<br>
-        <a href="https://proceedings.neurips.cc/paper/2021/file/5248e5118c84beea359b6ea385393661-Paper.pdf">Paper</a> |
-        <a href="https://slideslive.com/38968473/practical-near-neighbor-search-via-group-testing?ref=recommended">Talk</a> |
-        <a href="https://github.com/JoshEngels/FLINNG">Code</a> |
-        <a href="flinng">Blog Post</a>
-      </p>
-
-      <p>
-        <b>Missed one! How ballot layout and visual task strategy can interact to produce voting errors.</b> <br>
-        <u>Joshua Engels</u>, Xianni Wang, Michael D. Byrne<br>
-        International Conference on Cognitive Modeling 2020.<br>
-        <a href="https://par.nsf.gov/servlets/purl/10195603">Paper</a> |
-        <a href="https://mathpsych.org/presentation/148">Talk</a> |
-        <a href="https://github.com/JoshEngels/VotingModel">Code</a> |
-        <a href="voting">Blog Post</a>
+        <b>Semantic Product Search</b> <br>
+        Priyanka Nigam, Yiwei Song, Vijai Mohan, <u>Vihan Lakshman</u>, Weitian Ding, Ankit Shinghavi, Choon Hui Teo,
+        Hao Gu, Bing Yin<br>
+        Proceedings of the 25th ACM SIGKDD International Conference on Knowledge Discovery \& Data Mining.<br>
+        <a href="https://dl.acm.org/doi/pdf/10.1145/3292500.3330759">Paper</a> |
+        <!-- <a href="voting">Blog Post</a> -->
       </p>
       <hr>
 
@@ -109,7 +86,7 @@
       {{ post.content | strip_html | truncatewords: 18 }}
       <br>
       {% if forloop.last == false %}
-        <br>
+      <br>
       {% endif %}
       {% endfor %}
 
